@@ -4,10 +4,10 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
+/* Background color from #dde to #f0f0f0 */
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: #f0f0f0;
 }
 
 body {
@@ -27,12 +27,12 @@ p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
-
+/* Removed text shadow and changed color from white to dark gray */
 font[size="7"] {
   font-size: 4rem;
   text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
+  color: #333;
+  text-shadow: none;
 }
 
 font[size="6"] {
@@ -50,9 +50,9 @@ p, li, table {
 }
 
 /* || header layout */
-
+/* Changed backgrond from green to white */
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: white;
 }
 
 article, footer, .secondary {
@@ -62,37 +62,38 @@ article, footer, .secondary {
 article {
   margin-right: 10px;
 }
-
-div[class="nav"] {
+/* Changed from div[class="nav"] to nav */
+/* Changed background color from #ff80ff to #d64cb3 */
+nav{
   height: 50px;
-  background-color: ff80ff;
+  background-color: #d64cb3;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
-
-div[class="nav"] a {
+/* Updated navigaton color from black to white */
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
-div[class="nav"] .search {
+nav.search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -136,10 +137,10 @@ footer {
 }
 
 /* Table styling */
-
+/* Changed table background colors */
 table {
   width: 100%;
-  background-color: #dde;
+  background-color: #e0e0ff;
   border-collapse: collapse;
 }
 
@@ -154,9 +155,9 @@ td {
 th[scope="col"] {
   border-bottom: 1px solid black;
 }
-
+/* Updated strip color */
 tbody tr:nth-child(odd) {
-  background-color: #def;
+  background-color: #e8e8ff;
 }
 
 /* styling content images and audio */
@@ -247,4 +248,10 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+/* Added new h1 styling */
+/* replaces old font[size="7"] stying */
+h1 {
+  font-size: 40px;
+  text-align: center;
 }
